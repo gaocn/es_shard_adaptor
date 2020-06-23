@@ -11,6 +11,11 @@ import java.io.IOException;
 
 public class AdaptiveShardAdjustmentAction extends BaseRestHandler {
 
+    @Override
+    public String getName() {
+        return "es_shard_adaptor";
+    }
+
     @Inject
     public AdaptiveShardAdjustmentAction(Settings settings, RestController controller) {
         super(settings);

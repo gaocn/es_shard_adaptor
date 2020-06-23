@@ -6,10 +6,11 @@
 
     <groupId>ulog.abc</groupId>
     <artifactId>es_shard_adaptor</artifactId>
-    <version>5.2.0-SNAPSHOT</version>
+    <!--<version>5.2.0-SNAPSHOT</version>-->
+    <version>6.0.0-SNAPSHOT</version>
 
     <properties>
-        <elasticsearch.version>5.2.0</elasticsearch.version>
+        <elasticsearch.version>6.0.0</elasticsearch.version>
     </properties>
 
     <dependencies>
@@ -43,7 +44,14 @@
         <dependency>
             <groupId>org.elasticsearch.client</groupId>
             <artifactId>rest</artifactId>
-            <version>5.2.0</version>
+            <!--rest 6.0.0-alpha1要求es版本也要是6.0.0-alpha1暂不能使用-->
+            <version>6.0.0-alpha1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.quartz-scheduler/quartz -->
+        <dependency>
+            <groupId>org.quartz-scheduler</groupId>
+            <artifactId>quartz</artifactId>
+            <version>2.3.0</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.quartz-scheduler/quartz -->
         <dependency>
